@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+
+    background: linear-gradient(120deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.box {
+    width: 380px;
+    padding: 30px;
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.20);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.input {
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.45);
+    border: none;
+    font-size: 17px;
+    outline: none;
+    transition: .3s;
+}
+
+.input:focus {
+    background: rgba(255,255,255,0.65);
+    box-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+
+.btn {
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg,#6A5AF9,#FF6FD8);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+.result {
+    background: rgba(255,255,255,0.30);
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+
+.result h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+/* .loader {
+    margin: 10px auto;
+    width: 45px;
+    height: 45px;
+    border: 5px solid rgba(255,255,255,0.3);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
